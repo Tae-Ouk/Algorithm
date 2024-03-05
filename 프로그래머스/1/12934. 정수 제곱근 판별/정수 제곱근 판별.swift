@@ -6,8 +6,6 @@ func solution(_ n:Int64) -> Int64 {
 
     ans = val*val == n ? (val+1)*(val+1) : -1
     
-    print(ans)
-    print(val)
     
     return ans
 }
