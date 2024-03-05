@@ -1,19 +1,10 @@
 func solution(_ a:Int, _ b:Int) -> Int64 {
     var val: Int = 0
     
-    if a < b {
-        for i in a...b {
+    for i in a < b ? a...b : b...a {
             val += i
         }
-    }
-    else if b < a {
-        for i in b...a {
-            val += i
-        }
-    }
-    else {
-        return Int64(a)
-    }
     
-    return Int64(val)
+    
+    return a == b ? Int64(a) : Int64(val)
 }
