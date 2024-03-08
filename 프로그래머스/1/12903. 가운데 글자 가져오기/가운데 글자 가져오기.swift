@@ -13,8 +13,6 @@ func solution(_ s:String) -> String {
     
     let ans = arr.reduce("", +)
     
-    print(ans)
-    
     return ans
     
 }
